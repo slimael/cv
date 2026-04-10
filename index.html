@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CV y portfolio de [Tu Nombre] - Desarrollador Full Stack especializado en aplicaciones web accesibles y performantes."
+    />
+    <meta name="author" content="[Tu Nombre]" />
+    <meta
+      name="theme-color"
+      content="#2563eb"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0f172a"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CV + Portfolio | [Tu Nombre]" />
+    <meta
+      property="og:description"
+      content="Desarrollador Full Stack - Proyectos, experiencia y contacto."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tuusuario.github.io" />
+    <meta
+      property="og:image"
+      content="https://tuusuario.github.io/assets/og-image.jpg"
+    />
+
+    <title>CV | ISMAEL SALAS</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header con navegación -->
+    <header role="banner">
+      <div class="logo" aria-label="Inicio">
+        <a href="#inicio" style="text-decoration: none; color: inherit">CV</a>
+      </div>
+
+      <nav aria-label="Principal">
+        <a href="#inicio" class="nav-link" aria-current="page">Inicio</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        onclick="toggleTheme()"
+        aria-label="Alternar modo oscuro"
+        aria-pressed="false"
+        title="Cambiar tema"
+      >
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </header>
+
+    <main id="main-content" role="main">
+      <section id="inicio" class="hero" aria-labelledby="inicio-title">
+        <h1 id="inicio-title">ISMAEL FACUNDO SALAS</h1>
+        <p class="title">Desarrollador Full Stack</p>
+        <div style="text-align: justify; padding: var(--space-md)">
+          <span>
+            Cuento con experiencia en desarrollo de aplicaciones y en la
+            resolución de problemas, conbinando criterio analítico con enfoque
+            práctico. A lo largo de mi carrera trabajé en distintos tipos de
+            proyectos, lo que me permitió adaptarme a diferentes entornos y
+            formas de trabajo. Me destaco por la organización, la capacidad de
+            aprendizaje y el compromiso con las tareas. También tengo
+            experiencia trabajando en equipo, acompañando a otros compañeros y
+            participando en la mejora de procesos. Busco aportar desde un perfil
+            práctico, resolutivo y con buena comunicación, pudiendo desempeñarme
+            tanto en roles técnicos como en otros puestos donde se requiera
+            responsabilidad y organización.
+          </span>
+        </div>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn">Ver proyectos</a>
+          <a href="assets/cv.pdf" class="btn btn-outline" download
+            >📄 Descargar CV</a
+          >
+        </div>
+      </section>
+
+      <!-- Experiencia -->
+      <section id="experiencia" aria-labelledby="experiencia-title">
+        <h2 id="experiencia-title">Experiencia Laboral</h2>
+
+        <article class="card job">
+          <h3>Full Stack Developer – Freelance</h3>
+          <span class="meta">Empresa Tech • Nov 2024 - Abr 2025</span>
+          <p>
+            <span>
+              Migración de aplicación de logística de envíos a arquitectura
+              moderna basada en React.
+            </span>
+            <span>
+              Implementación de chatbot en WhatsApp para automatización de
+              consultas y seguimiento de pedidos.
+            </span>
+            <span>
+              Desarrollo end-to-end: definición de requerimientos, arquitectura,
+              desarrollo y testing.
+            </span>
+            <span>Optimización de rendimiento y organización del código.</span>
+          </p>
+          <span
+            >Stack: React, TypeScript, Tailwind, React Query, NestJS, Vite,
+            Storybook, Vitest</span
+          >
+        </article>
+        <article class="card job">
+          <h3>Full Stack Developer – Jobint</h3>
+          <span class="meta"
+            ><strong>HiringRoom</strong> • Ene 2020 - Jun 2023</span
+          >
+          <p>
+            <span>
+              Participación en migración de aplicaciones legacy (jQuery / PHP) a
+              React.
+            </span>
+            <span>
+              Desarrollo de nuevas funcionalidades en plataforma (HiringRoom)
+              tanto en frontend como backend.
+            </span>
+            <span>
+              Referente técnico del equipo: mentoría a desarrolladores, code
+              reviews y definición de buenas prácticas.
+            </span>
+            <span>
+              Participación en decisiones técnicas y mejoras de arquitectura.
+            </span>
+          </p>
+          <span
+            >Stack: React, TypeScript, React Query, Node.js, Express, NestJS,
+            Styled-components, PHP, jQuery
+          </span>
+        </article>
+
+        <article class="card job">
+          <h3>Desarrollador Frontend - Yalvatar</h3>
+          <span class="meta"
+            ><strong>Nubimetrics</strong> • Ene 2018 - Ago 2020</span
+          >
+          <p>
+            <span>
+              Desarrollo de interfaces para visualización de datos (dashboards,
+              tablas y gráficos).
+            </span>
+            <span>
+              Implementación de soluciones con D3.js para análisis de órdenes de
+              compra.
+            </span>
+            <span>
+              Mantenimiento y optimización de aplicaciones existentes.
+            </span>
+          </p>
+          <span
+            >Stack: React, Redux, RxJS, Next.js, D3.js, AngularJS, TypeScript,
+            C#
+          </span>
+        </article>
+
+        <article class="card job">
+          <h3>Full Stack - Kerbun S.R.L</h3>
+          <span class="meta"> Abr 2017 – Dic 2017</span>
+          <p>
+            <span>
+              Desarrollo y mantenimiento de aplicación del área de salud.
+            </span>
+            <span>
+              Trabajo bajo metodología Scrum (dailys, sprint planning, reviews).
+            </span>
+            <span> Colaboración con equipo remoto. </span>
+          </p>
+          <span>Stack: Node.js, AngularJS, Grails, Spring, MySQL </span>
+        </article>
+
+        <article class="card job">
+          <h3>Backend Developer – Top Fan Club</h3>
+          <span class="meta"
+            ><strong>Top Fan Club</strong> • May 2016 – Mar 2017</span
+          >
+          <p>
+            <span> Desarrollo de APIs para aplicación de juegos. </span>
+            <span> Diseño de lógica de negocio y manejo de datos. </span>
+          </p>
+          <span>Stack: Node.js, Express, RethinkDB </span>
+        </article>
+
+        <article class="card job">
+          <h3>Full Stack - Mainqueue Corp.</h3>
+          <span class="meta"> Dic 2013 – May 2016</span>
+          <p>
+            <span>
+              Desarrollo full stack en múltiples proyectos (logística,
+              e-commerce, gestión).
+            </span>
+            <span>
+              Integración de sistemas y mantenimiento de aplicaciones.
+            </span>
+          </p>
+          <span>Stack: Node.js, AngularJS, Java, MySQL, MongoDB </span>
+        </article>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="proyectos" aria-labelledby="proyectos-title">
+        <h2 id="proyectos-title">Proyectos Destacados</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Hiring Room</h3>
+            <span class="meta">React • Node.js • NestJS</span>
+            <p>Plataforma de reclutamiento y selección de personal.</p>
+          </article>
+
+          <article class="card">
+            <h3>Nubimetrics</h3>
+            <span class="meta">React • D3.js • DataTables</span>
+            <p>
+              Panel de visualización de datos con gráficos, tablas interactivos
+              y exportación de reportes.
+            </p>
+            <!-- <p class="mt-sm">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline"
+                style="padding: 0.3rem 0.8rem; font-size: 0.9rem"
+                >Ver código</a
+              >
+            </p> -->
+          </article>
+
+          <article class="card">
+            <h3>🤖 Chatbot IA</h3>
+            <span class="meta">Python • FastAPI • OpenAI</span>
+            <p>
+              Asistente conversacional integrado con APIs de IA para soporte
+              automatizado y atención al cliente.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section id="habilidades" aria-labelledby="habilidades-title">
+        <h2 id="habilidades-title">Habilidades Técnicas</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Frontend</h3>
+            <ul class="skills-list">
+              <li class="skill-tag">HTML5 Semántico</li>
+              <li class="skill-tag">CSS3 / Flexbox / Grid</li>
+              <li class="skill-tag">JavaScript (ES6+)</li>
+              <li class="skill-tag">React</li>
+              <li class="skill-tag">Accesibilidad WCAG</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Backend & DevOps</h3>
+            <ul class="skills-list">
+              <li class="skill-tag">Node.js / NestJS</li>
+              <li class="skill-tag">REST APIs</li>
+              <li class="skill-tag">MySQL / MongoDB</li>
+              <li class="skill-tag">Docker / Vercel</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Metodologías</h3>
+            <ul class="skills-list">
+              <li class="skill-tag">Git & GitHub</li>
+              <li class="skill-tag">Agile / Scrum</li>
+              <li class="skill-tag">Testing (Jest, Cypress)</li>
+              <li class="skill-tag">Code Review</li>
+              <li class="skill-tag">Documentación técnica</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" aria-labelledby="contacto-title">
+        <h2 id="contacto-title">Contacto</h2>
+
+        <p class="mb-md">
+          ¿Te interesa colaborar o tienes una oportunidad interesante? ¡Me
+          encantaría escucharte!
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:tu.email@ejemplo.com"> ✉️ ifsalas2@gmail.com </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/tuusuario"
+              target="_blank"
+              rel="noopener"
+            >
+              🔗 linkedin
+            </a>
+          </li>
+        </ul>
+
+        <p class="mt-md">
+          <a
+            href="mailto:tu.email@ejemplo.com?subject=Oportunidad%20laboral&body=Hola,%20vi%20tu%20CV%20y..."
+            class="btn"
+          >
+            Enviar mensaje
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>© <time datetime="2026">2026</time> Ismael Salas</p>
+      <p class="mt-sm">
+        <small>
+          Construido con ♿ accesibilidad y ❤️ por ti mismo.
+          <br />
+        </small>
+        <a href="#inicio" id="back-to-top">↑ Volver arriba</a>
+      </p>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button
+      class="top-btn"
+      onclick="scrollToTop()"
+      aria-label="Volver al inicio"
+      title="Volver arriba"
+    >
+      ↑
+    </button>
+    <script src="/js/main.js" />
+    <!-- Schema.org para SEO estructurado -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ismael Salas",
+        "jobTitle": "Desarrollador Full Stack",
+        "url": "https://slimael.github.io",
+        "email": "mailto:ifsalas2@gmail.com",
+        "sameAs": ["https://linkedin.com/in/tuusuario"],
+        "knowsAbout": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React",
+          "Node.js",
+          "Accesibilidad Web",
+          "WCAG"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Empresa Tech"
+        }
+      }
+    </script>
+  </body>
+</html>
