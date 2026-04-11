@@ -4,8 +4,8 @@
   --text-muted: oklch(44.6% 0.03 256.802);
   --accent: oklch(55.4% 0.046 257.417);
   --accent-hover: oklch(44.6% 0.043 257.281);
-  --card: #f9fafb;
-  --border: #e5e7eb;
+  --card: oklch(98.5% 0.001 106.423);
+  --border: oklch(96.8% 0.007 247.896);
 
   /* --- SOMBRAS --- */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -159,8 +159,11 @@ nav[aria-label="Principal"] {
 
 .nav-link:hover,
 .nav-link[aria-current="page"] {
-  color: var(--accent);
-  background: var(--card);
+  color: var(--card);
+  background: var(--accent-hover);
+}
+.dark .nav-link[aria-current="page"] {
+  color: var(--text);
 }
 
 .theme-toggle {
