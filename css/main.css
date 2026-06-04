@@ -151,19 +151,25 @@ nav[aria-label="Principal"] {
   color: var(--text);
   font-size: 0.9rem;
   padding: var(--space-xs) var(--space-sm);
-  border-radius: 6px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.nav-link:hover,
-.nav-link[aria-current="page"] {
-  color: var(--card);
-  background: var(--accent-hover);
+.nav-link:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
 }
+
+.nav-link[aria-current="page"] {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
 .dark .nav-link[aria-current="page"] {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .theme-toggle {
