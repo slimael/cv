@@ -9,7 +9,17 @@ const announce = (message) => {
 };
 
 // ===== ANIMACIONES AL SCROLL =====
+const adjustMainPadding = () => {
+  const header = document.querySelector("header");
+  const main = document.querySelector("main");
+  if (header && main) {
+    main.style.paddingTop = header.offsetHeight + "px";
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+  adjustMainPadding();
+  window.addEventListener("resize", adjustMainPadding, { passive: true });
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

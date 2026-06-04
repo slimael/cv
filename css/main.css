@@ -57,6 +57,7 @@ body.dark {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -195,7 +196,7 @@ nav[aria-label="Principal"] {
 
 /* ===== MAIN CONTENT ===== */
 main {
-  padding-top: 80px;
+  padding-top: 80px; /* sobreescrito por JS según altura real del header */
 }
 
 section {
@@ -332,7 +333,6 @@ h3 {
     border-color 0.2s ease;
 }
 
-
 .card h3 {
   margin-bottom: var(--space-xs);
 }
@@ -395,7 +395,9 @@ h3 {
   flex-shrink: 0;
   position: relative;
   z-index: 1;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .vtl-item:hover .vtl-dot {
@@ -507,7 +509,6 @@ h3 {
   transition: border-color 0.2s ease;
 }
 
-
 /* ===== CONTACTO ===== */
 .contact-list {
   list-style: none;
@@ -609,6 +610,13 @@ footer a {
   .btn {
     width: 100%;
     max-width: 280px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  p {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 }
 
